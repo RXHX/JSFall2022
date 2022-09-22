@@ -1,7 +1,7 @@
 // Find the number of Student and store it in numberOfStudent variable
 var numberOfStudents = document.getElementsByTagName('li').length;
 // Find the number of Pages and store it in numberOfPages variable
-var numberOfPages = parseInt(numberOfStudents/10);
+var numberOfPages = Math.ceil(parseInt(numberOfStudents/10));
 // Find the list of Students and store it in studentList Variable
 var studentList = document.querySelectorAll('li');
 
