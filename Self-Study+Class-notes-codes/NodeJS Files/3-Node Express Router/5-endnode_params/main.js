@@ -3,11 +3,14 @@ var express = require('express');
 app = express();
 
 app.get('/', function(req, res) {
+    console.log(req.params);
         res.sendFile(__dirname+"/index.html")
 });
 
+
 app.get('/:id', function(req, res) {
 
+    console.log("Req is"+req);
 let    page = req.params;
 
 console.log(page.id)
