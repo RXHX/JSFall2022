@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Document
+    link(rel='stylesheet', href='/static/route/stylesheet/style.css')
+  body
+    h3 Songs on The Beatles - Sgt. Pepper's Lonely Hearts Club Band (1967)
+    div
+      input(type='text')
+      button(type='submit') Add Song
+      ul
+        each song in songs
+          li= song
