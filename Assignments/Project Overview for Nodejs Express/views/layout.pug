@@ -18,14 +18,16 @@ html(class="no-js" lang="en" dir="ltr")
           .cell.auto
              
             //- Add your name here.
-            h5= myName
+            h5= name
 
             //- Add text here to describe who you are, what you do, and why you are so awesome.
             p.text-light
-              | Description
+             |#{description1}
+             br
+             |#{description2}
 
             //- Add about page route to the href below. 
-            a(href='') Learn More →
+            a(href=url) Learn More →
 
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large
@@ -33,7 +35,7 @@ html(class="no-js" lang="en" dir="ltr")
           button.menu-icon(type='button', data-toggle='my-info')
 
           //- Add your name here.  This is for the mobile screen sized version.
-          span.title-bar-title Name
+          span.title-bar-title=name
       block content
         
 
