@@ -1,0 +1,82 @@
+{
+"project":[
+   {
+    "id":"1",
+    "project_name":"Quote Slide Show",
+    "description":"Display Random Phrases / Flash Cards",
+    "technologies":["javascript","Html","CSS"],
+    "image_urls":"Assignments/Project Overview for Nodejs Express/image/Project1.PNG"
+
+   },
+   {
+    "id":"2",
+    "project_name":"Page Numbering",
+    "description":"Adding Page Number Links",
+    "technologies":["javascript","Html","CSS"],
+    "image_urls":"Assignments/Project Overview for Nodejs Express/image/Project2.PNG"
+   },
+   {
+   "id":"3",
+   "project_name":"Templating BMI Calculator",
+   "description":"BMI Form Practice",
+   "technologies":["javascript","Node","CSS","Html","express"],
+   "image_urls":"Assignments/Project Overview for Nodejs Express/image/Project3.PNG"
+   }
+
+],
+"about":{
+
+     "resume" : {
+        "title":"MERN Developer",
+        "generalDescription":"Overall 3+ year of Experience in Service Based IT Company. Worked with clients such as NTUC, Symsung and MyDrugCost. Experience in all phases of mobile app development life cycle from Inception, design, development to stabilization and deployment. ",
+        "projectExperience":" Worked on application Knocks which  is a collaboration software tool for Samsung which offers features like persistence chat room (Channels), private groups and direct messaging. Workspace is a place where channels can be created,  members are added, audio/video files can be exchanged. Also on a multi-platform application which provides facilities to buy grocery online from your nearest local store providing highest level of security during online transaction. It is one of the biggest and trustworthy application in Singapore.",
+        "valueAddonToOrganization":"Having experience of working under clients across different continent, will help me in better understanding the work culture and becoming a team Player",
+       "skills":{
+           "reactNative":"ReactNative(0.66)",
+           "reactJS":"ReactJS 16.14.0",
+           "swift":"Swift4.0",
+           "javascript":"Vanilla JavaScript",
+           "scm":"Git",
+           "express":"Express",
+           "node":"Node 16.17.1"
+       },
+       "phoneNumber":"778-773-9163",
+       "email":"rohan.kediyal@gmail.com",
+       "socialMediaUrl" : {
+        "github":"https://github.com/RXHX",
+        "linkedln":"https://www.linkedin.com/in/rohan-kediyal-b608a11a1",
+        "twitter":"https://twitter.com/RohanKediyal"
+       }    
+}
+},
+"index":{
+
+
+
+
+
+},
+"layout":{
+ "user" : {
+        "name":"Rohan Kediyal",
+        "description1": "Ambitous",  
+        "description2": "Punctual",
+        "profilePic":"Assignments/Project Overview for Nodejs Express/image/ProfilePic.png"
+ }
+
+},
+ "router" : {
+    "about":"/about",
+    "project":"/project",
+    "index":"/index",
+    "layout":"/"
+},
+"constants" :{
+     "about":"about",
+     "project":"project",
+     "index":"index",
+     "layout":"layout"
+      
+}
+
+}
