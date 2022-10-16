@@ -5,7 +5,7 @@
     "project_name":"Quote Slide Show",
     "description":"Display Random Phrases / Flash Cards",
     "technologies":["javascript","Html","CSS"],
-    "image_urls":"Assignments/Project Overview for Nodejs Express/image/Project1.PNG"
+    "image_urls":"/static/image/Project1.png"
 
    },
    {
@@ -13,14 +13,14 @@
     "project_name":"Page Numbering",
     "description":"Adding Page Number Links",
     "technologies":["javascript","Html","CSS"],
-    "image_urls":"Assignments/Project Overview for Nodejs Express/image/Project2.PNG"
+    "image_urls":"/static/image/Project2.png"
    },
    {
    "id":"3",
    "project_name":"Templating BMI Calculator",
    "description":"BMI Form Practice",
    "technologies":["javascript","Node","CSS","Html","express"],
-   "image_urls":"Assignments/Project Overview for Nodejs Express/image/Project3.PNG"
+   "image_urls":"/static/image/Project3.png"
    }
 
 ],
@@ -49,27 +49,23 @@
        }    
 }
 },
+
 "index":{
-
-
-
-
-
-},
-"layout":{
  "user" : {
         "name":"Rohan Kediyal",
         "description1": "Ambitous",  
         "description2": "Punctual",
-        "profilePic":"Assignments/Project Overview for Nodejs Express/image/ProfilePic.png"
+        "profilePic":"Assignments/Project Overview for Nodejs Express/image/ProfilePic.png",
+        "projectHeading":"Let's make the web great together!",
+        "Portfolio":"Portfolio of Business and Educational Projects"
+
  }
 
 },
  "router" : {
     "about":"/about",
     "project":"/project",
-    "index":"/index",
-    "layout":"/"
+    "index":"/"
 },
 "constants" :{
      "about":"about",
