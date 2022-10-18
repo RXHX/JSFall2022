@@ -10,6 +10,12 @@ app.get('/',(req,res)=>{
     res.render('card',{ prompt:"Welcome Here!",colors});
 });
 
+
+function helper()
+{
+    console.log("Got Here");
+}
+
 app.listen(port,()=>{
     console.log(`The Port is runnning at ${port}`);
 })
