@@ -1,0 +1,97 @@
+/* Fall 2022 */
+
+select {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+select {
+  margin-bottom: 1.5rem; }
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+
+.container:after
+{
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272727;
+  background-color: #faf9fc;
+  text-align: center; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
+img {
+  display: block;
+  margin: auto; }
+
+.container {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.card {
+  text-align: center;
+  border-radius: 6px;
+  background-color: #fff;
+  border: solid 2px #f0dce5;
+  padding: 20px;
+  margin-bottom: 24px; }
+  .card img {
+    border-radius: 4px;
+    margin-bottom: 2.25rem;
+    cursor: pointer;
+    width: 100%; }
+  .card p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem; }
+
+label {
+  color: #909090;
+  font-size: 2rem;
+  text-align: left; }
+
+select {
+  border: solid 2px #ddd; }
+
+  select:focus {
+    border: solid 2px #bf6a91; }
+
+select {
+  text-transform: capitalize; }
+

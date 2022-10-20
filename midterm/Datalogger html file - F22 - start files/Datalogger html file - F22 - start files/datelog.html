@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datelog</title>
+    <link href="css/datelog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="leftbox">
+      <form id="contact" action="" method="post">
+        <h3>Persona Log Form</h3>
+        <h4>Fill the information</h4>
+        <fieldset>
+          <input placeholder="name" type="text" name="fname" autofocus />
+        </fieldset>
+        <fieldset>
+          <input placeholder="Email Address" type="text" name="email" />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Date of Birth mm/dd/yyyy"
+            type="text"
+            name="dob"
+            id="datepicker"
+          />
+        </fieldset>
+        <input type="datetime-local" id="Test_DatetimeLocal">
+        <button type="submit" name="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <div class="rightbox">
+      <div id="list">
+        <table style="width: 100%">
+          <tr>
+            <th></th>
+            <th>First Name</th>
+            <th>email Address</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>#</td>
+            <td>name</td>
+            <td>email</td>
+            <td>age (years)</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
