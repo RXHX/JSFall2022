@@ -71,6 +71,7 @@ class App extends React.Component {
   };
 
   handleRemovePlayer = (id) => {
+    console.log('id:'+id);
     this.setState( prevState => {
       return {
         players: prevState.players.filter( p => p.id !== id )

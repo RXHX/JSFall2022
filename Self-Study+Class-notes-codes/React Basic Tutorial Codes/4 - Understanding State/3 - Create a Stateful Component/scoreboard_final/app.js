@@ -36,11 +36,11 @@ const Player = (props) => {
       <span className="player-name">
         { props.name }
       </span>
-
       <Counter />
     </div>
   );
 }
+
 
 class Counter extends React.Component {
   state = {
@@ -57,6 +57,7 @@ class Counter extends React.Component {
     );
   }
 }
+
 
 const App = (props) => {
   return (
@@ -76,6 +77,7 @@ const App = (props) => {
     </div>
   );
 }
+
 
 ReactDOM.render(
   <App initialPlayers={players} />,
