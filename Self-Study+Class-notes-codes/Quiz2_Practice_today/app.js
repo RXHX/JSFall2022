@@ -1,17 +1,4 @@
-
-
-
 const Player = (props) => {
-
-
-
-
-    const [displayed, setDisplayed] = useState(false)
-    function addInfo(){
-       setDisplayed(true)
-        
- 
-    }
 
     return(
         <div>
@@ -29,18 +16,17 @@ const Player = (props) => {
                 }
               
                 }>X</button>
-                  <button onClick={addInfo}>+</button>
-                {
-                displayed ? <div>
-                 <label>Name:</label>
-                 <input type = "text" id="name"></input>
-                 <label>Age:</label>
-                 <input type = "number" id="age"></input>
-                 <label>id</label>
-                 <input type = "number" id="id"></input>
-                  <button onClick={()=> { props.addSports( document.getElementById("name"),document.getElementById("age"),document.getElementById("id"))}}>Add Me</button>
-                 </div> : null
-                }  
+                 <button onClick={
+                    
+                    () => {
+
+                        props.showDisplay(true)
+       
+                       }
+        
+                    
+                    }>+</button>
+                 
         </div>
     )
 } 
@@ -114,7 +100,8 @@ class App extends React.Component {
             id:4
         }
     ],
-    newPlayer : { }
+    newPlayer : { name:"",age:0,id:0},
+    show: false
     }
  
 
@@ -125,22 +112,38 @@ class App extends React.Component {
         }))
      }
 
-
-     addSportInfo = ( newName,newAge,newId) => {
-
-
-
+     handleNameChange = (event) => {
        this.setState({
-        newPlayer:{
-            name:newName,
-            age:newAge,
-            id:newId
-        }
-       });
+        newPlayer :{...this.state.newPlayer,name:event.target.value}
+       })
+      };
 
+
+      handleAgeChange = (event) => {
+        this.setState({
+         newPlayer :{...this.state.newPlayer,age:event.target.value}
+        })
+       };
+
+
+       handleIdChange = (event) => {
+        this.setState({
+         newPlayer :{...this.state.newPlayer,id:event.target.value}
+        })
+       };
+
+     addSportInfo = () => {
         this.setState( prevState => ({
             players : [...prevState.players,this.state.newPlayer]
         }));
+
+        this.display(false)
+     }
+
+     display = (status) => {
+        this.setState({
+            show:status
+        })
      }
 
     render()
@@ -157,17 +160,37 @@ class App extends React.Component {
                   id = {players.id}
                   key = {players.id.toString()}
                   removeSports = {this.removePlayer}
-                  addSports = {this.addSportInfo}
+                  showDisplay = {this.display}          
                />
            )}
+              
+            {
+                this.state.show ? <div>
+                 <label>Name:</label>
+                 <input 
+                 type="name" 
+                 id="name" 
+                 onChange={this.handleNameChange}
+                 ></input><br/>
+                 <label>Age:</label>
+                 <input 
+                 type = "number" 
+                 id="age"
+                 onChange={this.handleAgeChange}
+                 ></input><br/>
+                 <label>id</label>
+                 <input 
+                 type = "number" 
+                 id="id"
+                 onChange={this.handleIdChange}
+                 ></input><br/>
+                <button onClick = {this.addSportInfo}>Add</button>
+                 </div> : null
+                }
             </div>
         )
 
     }
-
-
-
-
 }
 
 // step 1
