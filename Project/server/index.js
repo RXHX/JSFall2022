@@ -3,12 +3,19 @@ import parser from "body-parser";
 import mongoose from "mongoose";
 import pkg from 'mongoose';
 import post from './post.js';
+import cors from 'cors';
+
 
 const { Schema } = pkg;
 
 const app = express();
-
-const port = process.env.PORT || 3000;
+const corsOptions ={
+  origin:'http://localhost:3000', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
+const port = process.env.PORT || 3001;
 
 //use your own mongodb atlas username and password to replace user and pw below
 
@@ -77,7 +84,7 @@ function shuffleArray(array) {
 
 app.get('/randomData',(req,res)=>{
     const Quote = shuffleArray(post);
-    res.json(Quote);
+    res.send(Quote);
 });
 
 app.get('/specificData',(req,res) => {
