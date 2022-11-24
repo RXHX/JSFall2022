@@ -87,13 +87,13 @@ app.get('/randomData',(req,res)=>{
     res.send(Quote);
 });
 
-app.get('/specificData',(req,res) => {
+app.post('/specificData',(req,res) => {
     const id = req.id;
     const searchedQuote = getSpecificQuote(id);
     res.json(searchedQuote);
 });
 
-
+app.delete('/')
 app.listen(port, () => {
  console.log("starting server")
 });
