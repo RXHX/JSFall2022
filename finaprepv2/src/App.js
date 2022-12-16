@@ -3,15 +3,21 @@ import Create from './component/Create';
 import Edit from './component/Edit';
 import Home from './component/Home';
 import Update from './component/Update';
+import Header from './component/Header';
+import Delete from './component/Delete';
+import Consume from './component/Consume';
 function App() {
   return (
-    <div>
+    <div> 
      <BrowserRouter>
+     <Header/>
      <Routes>
-      <Route path="/" exact element={<Home/>}/>
-      <Route path="/create" element={<Create/>}/>
-      <Route path="/edit" element={<Edit/>}/>
-      <Route path="/update" element={<Update/>}/>
+      <Route path="/"  element={<Home/>}/>
+      <Route path="/create"  element={<Create/>}/>
+      <Route path="/edit"  element={<Edit/>}/>
+      <Route path="/update"  element={<Update/>}/>
+      <Route path="/delete"  element={<Delete/>}/> 
+      <Route path="/consume" element={<Consume/>}/>
      </Routes>
      </BrowserRouter>      
     </div>

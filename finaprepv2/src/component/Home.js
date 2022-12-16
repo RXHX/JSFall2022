@@ -3,7 +3,8 @@ function Home()
 {
 return(
     <div>
-        Cool
+        this is a home Page where all your items where
+        all yours item will be there at the home screen.
     </div>
 )
 
