@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <head>
     <title>Web Page</title>
+    <link href="css/style.css" />
 </head>
+
+<script>
+    function change() {
+        document.getElementById("12").innerHTML = "Cool";
+    }
+</script>
 <body>
 <form action="/" method="post">
-<label >Name:</label>   
+<label id ="12" onclick="change()">Name:</label>   
 <input name="name" type="text"></input><br>
 <label>Age</label>
 <input name="age" type="number"></input><br>
 <input type="submit"></input>
 </form>
-<div></div>
 </body>
 </html>
